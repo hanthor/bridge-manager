@@ -317,7 +317,7 @@ func runBridge(ctx *cli.Context) error {
 	var bridgeArgs []string
 	var needsWebsocketProxy bool
 	switch cfg.BridgeType {
-	case "imessage", "imessagego", "whatsapp", "discord", "slack", "gmessages", "gvoice", "signal", "meta":
+	case "imessage", "imessagego", "whatsapp", "discord", "slack", "gmessages", "gvoice", "signal", "meta", "telegramgo":
 		binaryName := fmt.Sprintf("mautrix-%s", cfg.BridgeType)
 		ciV2 := false
 		switch cfg.BridgeType {
